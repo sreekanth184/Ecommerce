@@ -54,7 +54,7 @@ function Products_list({ product }) {
   if (!product || !images || images.length === 0) return null;
 
   return (
-    <div className="bg-gray-50 rounded-lg p-4 flex flex-col" id="products">
+    <div className="bg-gray-50 border border-gray-100 rounded-lg p-4 flex flex-wrap" id="products">
           <Link to={`/product/${id}`}>
             <div className="relative w-full h-48 mb-4 flex items-center justify-center">
               <img

@@ -83,7 +83,7 @@ function Home_page() {
         </div>
 
         {/* Categories Swiper */}
-        <div className="border border-gray-400 rounded-lg p-6">
+        <div className="border-2 border-gray-200 rounded-lg p-6">
           {isLoading ? (
             <div className="flex justify-center items-center h-40">
               <p>Loading categories...</p>

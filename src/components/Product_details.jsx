@@ -31,7 +31,7 @@ const ProductDetails = ({ item }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 py-16">
       <main className="max-w-7xl mx-auto p-6 sm:p-8 lg:p-10">
         {/* Product Section */}
         <div className="lg:grid lg:grid-cols-2 lg:gap-10">

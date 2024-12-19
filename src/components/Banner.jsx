@@ -4,12 +4,13 @@ import { Link } from "react-scroll";
 
 function Banner() {
   return (
-    <div className="grid grid-cols-2 gap-4 shadow-xl">
-      <div className="flex flex-col justify-center items-start px-20 text-4xl font-bold">
-        <h2 className="text-4xl font-bold mb-4 text-orange-400">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 shadow-xl px-4 py-20 sm:px-20">
+      {/* Left Side Content */}
+      <div className="flex flex-col justify-center items-start text-center sm:text-left">
+        <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-orange-400">
           Explore Our Best Deals!
         </h2>
-        <p className="text-base font-semibold mb-6 text-gray-500">
+        <p className="text-sm sm:text-base font-semibold mb-6 text-gray-500">
           Discover the latest trends and timeless classics in electronics at unbeatable prices. From cutting-edge gadgets to essential devices, we have everything you need to elevate your lifestyle. Don’t miss out—shop now and experience the best in technology!
         </p>
         <Link
@@ -37,8 +38,15 @@ function Banner() {
           </svg>
         </Link>
       </div>
-      <div>
-        <img src={bannerImg} alt="Promotional banner showcasing electronics deals" onError={(e) => e.target.src = "fallback-image-path.png"} />
+
+      {/* Right Side Image */}
+      <div className="flex justify-center sm:justify-end mt-6 sm:mt-0">
+        <img
+          src={bannerImg}
+          alt="Promotional banner showcasing electronics deals"
+          className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl object-contain sm:object-cover rounded-lg"
+          onError={(e) => e.target.src = "fallback-image-path.png"}
+        />
       </div>
     </div>
   );
